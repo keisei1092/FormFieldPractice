@@ -10,9 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textField: FormTextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        textField.addTarget(self, action: #selector(handleTextField(_:)), for: .editingChanged)
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +23,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func handleTextField(_ textField: FormTextField) {
+        // バリデーション例として20文字以内であるかチェック
+        guard let text = textField.text else { return }
+        textField.isValid = text.characters.count < 20
+    }
 
 }
 

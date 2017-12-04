@@ -14,6 +14,7 @@
 		4588E8971FD4D80900121E93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4588E8951FD4D80900121E93 /* LaunchScreen.storyboard */; };
 		4588E8A21FD4D80900121E93 /* ValidationFormFieldPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4588E8A11FD4D80900121E93 /* ValidationFormFieldPracticeTests.swift */; };
 		4588E8AD1FD4D80900121E93 /* ValidationFormFieldPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4588E8AC1FD4D80900121E93 /* ValidationFormFieldPracticeUITests.swift */; };
+		4588E8BB1FD4DAFC00121E93 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4588E8BA1FD4DAFC00121E93 /* FormTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		4588E8A81FD4D80900121E93 /* ValidationFormFieldPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValidationFormFieldPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4588E8AC1FD4D80900121E93 /* ValidationFormFieldPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationFormFieldPracticeUITests.swift; sourceTree = "<group>"; };
 		4588E8AE1FD4D80900121E93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4588E8BA1FD4DAFC00121E93 /* FormTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				4588E8931FD4D80900121E93 /* Assets.xcassets */,
 				4588E8951FD4D80900121E93 /* LaunchScreen.storyboard */,
 				4588E8981FD4D80900121E93 /* Info.plist */,
+				4588E8BA1FD4DAFC00121E93 /* FormTextField.swift */,
 			);
 			path = ValidationFormFieldPractice;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4588E88F1FD4D80900121E93 /* ViewController.swift in Sources */,
+				4588E8BB1FD4DAFC00121E93 /* FormTextField.swift in Sources */,
 				4588E88D1FD4D80800121E93 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +520,7 @@
 				4588E8B31FD4D80900121E93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4588E8B41FD4D80900121E93 /* Build configuration list for PBXNativeTarget "ValidationFormFieldPracticeTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +529,7 @@
 				4588E8B61FD4D80900121E93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4588E8B71FD4D80900121E93 /* Build configuration list for PBXNativeTarget "ValidationFormFieldPracticeUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +538,7 @@
 				4588E8B91FD4D80900121E93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
