@@ -14,6 +14,7 @@ class FormTextField: UITextField {
     var isValid = true {
         didSet {
             validatorLayer.isHidden = isValid
+            validatorLayer.frame = CGRect(x: 0, y: self.frame.height - 2, width: self.frame.width, height: 2)
             textColor = isValid ? .black : .red
         }
     }
@@ -32,7 +33,6 @@ class FormTextField: UITextField {
         // バリデーション用の下線
         validatorLayer = CALayer()
         validatorLayer.backgroundColor = UIColor.red.cgColor
-        validatorLayer.frame = CGRect(x: 0, y: self.frame.height - 2, width: self.frame.width, height: 2)
         validatorLayer.isHidden = true
         layer.addSublayer(validatorLayer)
     }
